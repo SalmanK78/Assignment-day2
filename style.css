@@ -37,9 +37,26 @@ ul li a{
     
 }
 @media  screen and (max-width: 600px) {
-    ul{
+    
+    nav ul ul {
         display: none;
     }
+    nav ul:hover ul{
+        display: block;
+        width: 200%;
+        background: rgb(247, 198, 142);
+    }
+    nav ul ul li a:hover{
+        background:rgb(250,208,159);
+    }
+    .nav-icon{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+    }
+    
+
     .logo{
         font-size: 20px;
         margin: 20px 0px;
@@ -97,7 +114,6 @@ header .banner{
     .section1{
         flex-direction: column;
         text-align: center;
-
     }
     .section1 .images{
         display: grid;
